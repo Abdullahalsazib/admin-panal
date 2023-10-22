@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ .menyoverflow{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+}
+.menyoverflow::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+    border-radius: 20%;
+}
+
+.menyoverflow::-webkit-scrollbar{
+    width: 5px;
+    background-color: #F0F3FB;
+    border-radius: 10%;
+}
