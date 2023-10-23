@@ -3,7 +3,9 @@ import { FcBiohazard } from "react-icons/fc";
 import { FiBell, FiMaximize } from "react-icons/fi";
 import { BsMenuButton } from "react-icons/bs";
 import AdminProfile from "../SmallComponents/AdminProfile";
-import userProfileImg from "./src/Components/Navbars/profile.avif";
+
+
+const ProfileImg = "./src/Components/Navbars/admin.jpg";
 
 import { BiSolidDashboard } from "react-icons/bi";
 import { FaChalkboardTeacher } from "react-icons/fa";
@@ -41,7 +43,7 @@ export default function Navbar() {
   const username = "Reon Leo";
   const companyName = "Smart";
   const userPossition = "Admin";
-  const ProfileImg = { userProfileImg };
+ 
   const [dOpen, setDopen] = useState(true);
   const [smdOpen, setsmDopen] = useState(true);
   const [subMopen, setSubMenuOpen] = useState(false);
@@ -83,7 +85,7 @@ export default function Navbar() {
                 } duration-300  flex justify-center  py-4 `}
               >
                 <AdminProfile
-                  ProfileImgUrl={ProfileImg}
+                  userAdminImg={ProfileImg}
                   userName={username}
                   userPossition={userPossition}
                 />
@@ -142,7 +144,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          {/* skdfkfjskfjslfj */}
+          {/* sm side navber design */}
           <div>
             <div
               className={` block lg:hidden shadow-slate-400 shadow-lg bg-white  w- h-screen
@@ -177,9 +179,10 @@ export default function Navbar() {
                   } duration-300  flex justify-center  py-4 `}
                 >
                   <AdminProfile
-                    ProfileImgUrl={ProfileImg}
+                    
                     userName={username}
                     userPossition={userPossition}
+                    userAdminImg={ProfileImg}
                   />
                 </div>
                 {/* ul li start */}
@@ -236,7 +239,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* skdfkfjskfjslfj */}
+          {/* sm side navber design */}
 
           <div className="w-full space-y-3">
             <div className=" shadow-[0_35px_60px_-20px_rgba(0,0,0,0.3)]  bg-white flex items-center h-[62px]  w-[100%] justify-between px-3 lg:px-[30px] py-2">
