@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "./Components/Navbars/Navbar";
+import Topnav from "./Components/Dashboard/Topnav";
+import MenuBar from "./Components/Dashboard/MenuBar";
 
 export default function App() {
   return (
     <div>
-      <Navbar />
+      <Topnav />
+      <MenuBar />
     </div>
   );
 }
